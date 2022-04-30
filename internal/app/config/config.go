@@ -25,6 +25,7 @@ type Config struct {
 	NotifyNeeded       bool              `yaml:"notify_needed"`        // 通知开关 发现有可配送时段时通知大家有可购商品
 	AudioNeeded        bool              `yaml:"audio_needed"`         // 播放音频开关 在下单成功后播放音频
 	PayType            int               `yaml:"pay_type"`             // 支付类型
+	minTotalMoney      float64           `yaml:"min_total_money"`      // 订单最低提交价格，低于该价格不提交订单
 	Headers            map[string]string `yaml:"headers"`              // 请求头
 	Params             map[string]string `yaml:"params,omitempty"`     // 请求参数
 	Mock               map[string]string `yaml:"mock,omitempty"`       // 模拟参数测试用

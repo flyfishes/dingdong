@@ -2,6 +2,7 @@ package app
 
 import (
 	"log"
+	"math/rand"
 	"net/http"
 	"time"
 
@@ -44,22 +45,22 @@ func isPeak() bool {
 func Monitor() {
 	cartMap := service.MockCartMap()
 	for {
-		<-time.After(time.Second)
+		//<-time.After(time.Second) ////定时1s，阻塞1s,1s后产生一个事件，往channel写内容
 		conf := config.Get()
-		// duration := conf.MonitorIntervalMin + rand.Intn(conf.MonitorIntervalMax-conf.MonitorIntervalMin)
 		if !conf.MonitorNeeded && !conf.PickUpNeeded {
 			continue
 		}
-		// 每5分钟第1秒运行一次
+		/* // 每5分钟第1秒运行一次
 		now := time.Now()
 		if now.Minute()%5 != 0 || now.Second() != 1 {
 			continue
-		}
+		} */
 		if isPeak() {
 			log.Println("当前高峰期或暂未营业")
 			continue
 		}
 		service.MonitorAndPickUp(cartMap)
-		// <-time.After(time.Duration(duration) * time.Second)
+		duration := conf.MonitorIntervalMin + rand.Intn(conf.MonitorIntervalMax-conf.MonitorIntervalMin)
+		<-time.After(time.Duration(duration) * time.Second)
 	}
 }

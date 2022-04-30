@@ -1,0 +1,163 @@
+2022/04/30 12:06:02 E:\app\dingdong\dingdong
+2022/04/30 12:06:02 当前程序进程 PID =>  109452
+2022/04/30 12:06:02 已加载配置 => 
+name: 叮咚买菜助手
+addr: :9999
+base_concurrency: 3
+submit_concurrency: 2
+snap_up: 3
+advance_time: 25
+pick_up_needed: true
+monitor_needed: true
+monitor_success_wait: 10
+monitor_interval_min: 55
+monitor_interval_max: 300
+notify_needed: true
+audio_needed: true
+pay_type: 25
+headers:
+  cookie: DDXQSESSID=41d5a9063375730222f45f5b414dd6c1
+  ddmc-api-version: 9.50.2
+  ddmc-app-client-id: "10"
+  ddmc-build-version: 2.85.3
+  ddmc-channel: applet
+  ddmc-sdkversion: "0"
+  user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15
+    (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI
+    Language/zh_CN
+bark: []
+push_plus:
+- 675b88c72d1d428c89fae8eef56a8ee8
+
+
+2022/04/30 12:06:03 获取用户信息成功, id: 5e3d8d0d0e707349008e2004, name: 叮咚_680f557a5cf82
+2022/04/30 12:06:03 {
+  "id": "5e4347c52956c67a61d3aa21",
+  "gender": 1,
+  "mobile": "13321853325",
+  "location": {
+    "typecode": "120302",
+    "address": "闵行区莲花路1058弄1-3号",
+    "name": "东苑怡景园",
+    "location": [
+      121.398265,
+      31.151237
+    ],
+    "id": "B00151F82E"
+  },
+  "label": "",
+  "user_name": "邹",
+  "addr_detail": "3-601",
+  "station_id": "5dc2a0f626c3d171698b456c",
+  "station_name": "龙茗站",
+  "is_default": true,
+  "city_number": "0101",
+  "info_status": 1,
+  "station_info": {
+    "id": "5dc2a0f626c3d171698b456c",
+    "address": "",
+    "name": "龙茗站",
+    "phone": "10103365",
+    "business_time": "24h",
+    "city_name": "上海市",
+    "city_number": "0101"
+  },
+  "village_id": "5e91c4c425e1f75e608b5eec"
+}
+2022/04/30 12:06:03 默认收货地址: 闵行区莲花路1058弄1-3号 东苑怡景园 3-601
+2022/04/30 12:06:03 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:07:00 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:11:54 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:31:09 E:\app\dingdong\dingdong
+2022/04/30 12:31:09 当前程序进程 PID =>  109440
+2022/04/30 12:31:09 已加载配置 => 
+name: 叮咚买菜助手
+addr: :9999
+base_concurrency: 3
+submit_concurrency: 2
+snap_up: 3
+advance_time: 25
+pick_up_needed: true
+monitor_needed: true
+monitor_success_wait: 10
+monitor_interval_min: 55
+monitor_interval_max: 300
+notify_needed: true
+audio_needed: true
+pay_type: 25
+headers:
+  cookie: DDXQSESSID=41d5a9063375730222f45f5b414dd6c1
+  ddmc-api-version: 9.50.2
+  ddmc-app-client-id: "10"
+  ddmc-build-version: 2.85.3
+  ddmc-channel: applet
+  ddmc-sdkversion: "0"
+  user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15
+    (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI
+    Language/zh_CN
+bark: []
+push_plus:
+- 675b88c72d1d428c89fae8eef56a8ee8
+
+
+2022/04/30 12:31:09 获取用户信息成功, id: 5e3d8d0d0e707349008e2004, name: 叮咚_680f557a5cf82
+2022/04/30 12:31:09 {
+  "id": "5e4347c52956c67a61d3aa21",
+  "gender": 1,
+  "mobile": "13321853325",
+  "location": {
+    "typecode": "120302",
+    "address": "闵行区莲花路1058弄1-3号",
+    "name": "东苑怡景园",
+    "location": [
+      121.398265,
+      31.151237
+    ],
+    "id": "B00151F82E"
+  },
+  "label": "",
+  "user_name": "邹",
+  "addr_detail": "3-601",
+  "station_id": "5dc2a0f626c3d171698b456c",
+  "station_name": "龙茗站",
+  "is_default": true,
+  "city_number": "0101",
+  "info_status": 1,
+  "station_info": {
+    "id": "5dc2a0f626c3d171698b456c",
+    "address": "",
+    "name": "龙茗站",
+    "phone": "10103365",
+    "business_time": "24h",
+    "city_name": "上海市",
+    "city_number": "0101"
+  },
+  "village_id": "5e91c4c425e1f75e608b5eec"
+}
+2022/04/30 12:31:09 默认收货地址: 闵行区莲花路1058弄1-3号 东苑怡景园 3-601
+2022/04/30 12:31:10 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:33:14 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:35:21 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:36:34 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:37:46 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:42:12 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:45:23 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:49:00 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:50:09 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:52:25 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:56:27 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 12:57:40 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:01:11 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:04:14 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:07:09 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:10:17 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:12:09 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:15:09 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:17:07 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:18:40 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:20:13 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:21:18 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:23:59 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:27:28 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 13:31:16 无效的响应 获取运力失败 => {"success":false,"code":-3000,"server_time":0,"is_trade":0,"msg":"当前人多拥挤，请稍后尝试刷新页面","tradeTag":"","data":[]}
+2022/04/30 15:09:48 请求失败 Post "https://maicai.api.ddxq.mobi/order/getMultiReserveTime": dial tcp: lookup maicai.api.ddxq.mobi: no such host

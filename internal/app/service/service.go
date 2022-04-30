@@ -24,7 +24,7 @@ const (
 )
 
 const (
-	durationMinMillis = 450
+	durationMinMillis = 150
 	durationMaxMillis = 550
 	durationGapMillis = durationMaxMillis - durationMinMillis
 )
@@ -320,7 +320,7 @@ func SnapUpOnce(mode int) {
 
 // SnapUp 抢购
 func SnapUp() {
-	timer := time.Tick(time.Second)
+	timer := time.Tick(time.Second) //(100 * time.Millisecond)
 	for {
 		select {
 		case <-timer:

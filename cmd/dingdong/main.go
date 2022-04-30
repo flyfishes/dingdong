@@ -1,6 +1,7 @@
 package main
 
 import (
+	"io"
 	"log"
 	"math/rand"
 	"os"
@@ -13,6 +14,14 @@ import (
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
+	logFile, err := os.OpenFile("dingdong.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	//defer logFile.Close()
+	if err != nil {
+		log.Printf("create log file error")
+		return
+	}
+	mw := io.MultiWriter(os.Stdout, logFile)
+	log.SetOutput(mw)
 }
 
 func main() {

@@ -3,6 +3,7 @@ package service
 import (
 	"log"
 	"net/http"
+	"strconv"
 
 	"dingdong/internal/app/dto"
 	"dingdong/internal/app/pkg/ddmc/session"
@@ -102,9 +103,25 @@ func GetCart() (map[string]interface{}, error) {
 		product["total_origin_money"] = product["total_origin_price"]
 		products = append(products, product)
 	}
+	total_money := 0.0
 	for k, v := range products {
 		log.Printf("[%v] %s 数量: %v 总价: %s", k, v["product_name"], v["count"], v["total_price"])
+		//	strmoney := fmt.Sprintf("%v", v["total_price"])
+		if strmoney, ok := v["total_price"].(string); ok {
+			money, ok := strconv.ParseFloat(strmoney, 64)
+			if ok != nil {
+				return nil, errs.New(code.AssertFailed)
+			}
+			total_money += money
+		}
 	}
+
+	//conf := config.Get()
+	if total_money < 39 { //conf.minTotalMoney {
+		log.Printf("购物车订单总价格低于设定的最低价格(39): %f", total_money)
+		return nil, errs.WithMessage(code.AssertFailed, "购物车订单总价格低于设定的最低价格")
+	}
+
 	res["products"] = products
 
 	if v, ok := data["parent_order_info"].(map[string]interface{}); ok {
