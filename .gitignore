@@ -8,6 +8,8 @@
 
 # Project
 config.yml
+*.log
+*.exe
 /release
 /dingdong
 /data
