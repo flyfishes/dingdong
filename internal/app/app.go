@@ -59,11 +59,21 @@ func Monitor() {
 		if !conf.MonitorNeeded && !conf.PickUpNeeded {
 			continue
 		}
+<<<<<<< HEAD
 		/* // 每5分钟第1秒运行一次
 		now := time.Now()
 		if now.Second() != 0 {
 			continue
 		} */
+=======
+		now := time.Now()
+		if now.Second() != 0 {
+			continue
+		}
+		// 每分钟在第1-3秒运行一次
+		random := rand.Intn(3) + 1
+		<-time.After(time.Second * time.Duration(random))
+>>>>>>> bcfac16974c4235488e4d87546cec6fe57388223
 		if isPeak() {
 			log.Println("当前高峰期或暂未营业")
 			continue
