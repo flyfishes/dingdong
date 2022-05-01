@@ -34,6 +34,8 @@ type DingDong struct {
 	Headers            map[string]string `yaml:"headers"`              // 请求头
 	Params             map[string]string `yaml:"params,omitempty"`     // 请求参数
 	Mock               map[string]string `yaml:"mock,omitempty"`       // 模拟参数测试用
+	MonitorIntervalMin int               `yaml:"monitor_interval_min"` // 监视器调用接口的最小时间间隔 单位:秒
+	MonitorIntervalMax int               `yaml:"monitor_interval_max"` // 监视器调用接口的最大时间间隔 单位:秒
 }
 
 type MeiTuan struct {

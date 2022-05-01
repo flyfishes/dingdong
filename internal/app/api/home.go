@@ -137,6 +137,26 @@ func SetConfig(w http.ResponseWriter, r *http.Request) {
 		}
 		conf.DingDong.MonitorSuccessWait = monitorSuccessWait
 	}
+	if r.Form.Get("monitor_interval_min") != "" {
+		monitorIntervalMin, err := strconv.Atoi(r.Form.Get("monitor_interval_min"))
+		if err != nil {
+			_, _ = io.WriteString(w, err.Error())
+			return
+		}
+		conf.DingDong.MonitorIntervalMin = monitorIntervalMin
+	}
+	if r.Form.Get("monitor_interval_max") != "" {
+		monitorIntervalMax, err := strconv.Atoi(r.Form.Get("monitor_interval_max"))
+		if err != nil {
+			_, _ = io.WriteString(w, err.Error())
+			return
+		}
+		if monitorIntervalMax < conf.DingDong.MonitorIntervalMin {
+			_, _ = io.WriteString(w, "监控间隔最大值不能小于最小值\n")
+			return
+		}
+		conf.DingDong.MonitorIntervalMax = monitorIntervalMax
+	}
 	if r.Form.Get("notify_needed") != "" {
 		notifyNeeded := r.Form.Get("notify_needed")
 		conf.DingDong.NotifyNeeded = notifyNeeded != "0"
